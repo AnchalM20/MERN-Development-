@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        table,tr,th,td{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col span="2" style="background-color:rgb(6, 99, 99);">
+            <col span="" style="background-color: rgb(241, 96, 120);">
+            <col span="" style="background-color: rgb(123, 93, 199);"> <!--  To Hide table column -->
+        </colgroup>
+        <thead>
+            <tr>
+                <th colspan="2">Name</th>
+                <th>Age</th>
+                <th>Department</th>
+            </tr>
+        </thead>
+    
+        <tr>
+            <td>Anchal</td><td>Maurya</td>
+            <td>67</td>
+            <td>Finance</td>
+        </tr>
+        <tr>
+            <td>Riya</td><td>Singh</td>
+            <td>45</td>
+            <td>IT</td>
+        </tr>
+        <tfoot>
+            <tr>
+                <td>Priya</td><td>sharma</td>
+                <td>44</td>
+                <td>Marketing</td>
+            </tr>
+        </tfoot>
+        <caption>Employee Details</caption>
+    </table>
+<br>
+
+
+    <table>
+      <tr>
+        <th rowspan="2">Name</th>
+        <td>Komal</td>
+        <td>Gawde</td>
+      </tr>
+      <tr>
+        <td>Komal</td>
+        <td>Gawde</td>
+      </tr>
+      <tr>
+        <td>+91-39594389</td>
+        <th rowspan="2" colspan="2">Phone no</th>
+        <!-- <td>Gawde</td> -->
+      </tr>
+      <tr>
+        <td>+91-39594389</td>
+        <!-- <td>Gawde</td>
+        <td>Komal</td> -->
+      </tr>  
+    </table>
+
+    <br><br>
+    <h2>Homework Table</h2>
+    <table>
+        
+        <tr>
+            <th rowspan="3">Day</th>
+            <th colspan="4">Seminar</th>
+        </tr>
+        <tr>
+            <th colspan="2">Schedule</th>
+            <th rowspan="2" colspan="2">Topic</th>
+        </tr>
+        <tr>
+            <th>Begin</th>
+            <th>End</th>
+        </tr>
+        <tr>
+            <th rowspan="2"></th>
+            <td rowspan="2">8.00 a.m.</td>
+            <td rowspan="2">5.00 p.m.</td>
+            <td colspan="2">Introduction to XML</td>
+        </tr>
+        <tr>
+            <td colspan="2">Validity DTD and relax NG</td>
+        </tr>
+        <tr>
+            <th rowspan="3">Tuesday</th>
+            <td>8.00 a.m.</td>
+            <td>11.00 a.m.</td>
+            <td colspan="2" rowspan="1">XML</td>
+        </tr>
+        <tr>
+            <td>8.00 a.m.</td>
+            <td>11.00 a.m.</td> 
+            <td colspan="2">XSL Transaction</td>
+        </tr>
+        <tr>
+            <td>8.00 a.m.</td>
+            <td>11.00 a.m.</td>
+           
+        </tr>
+        <tr>
+            <th>Wednesday</th>
+            <td>8.00 a.m.</td>
+            <td>12.00 p.m.</td>
+            <td colspan="2">XSL Formatting Objects</td>
+        </tr>
+    </table>
+</body>
+</html>

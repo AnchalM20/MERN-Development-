@@ -1,0 +1,21 @@
+.box{
+    max-height: 100px;
+    border: 1px solid;
+    overflow: auto;
+}
+/* If content lexx than max-height then it will be inside the box
+ If max-height se jyada content hai then overflow ho jayega content out of box
+to handle this overflow we set overflow:scroll */
+.mydiv{
+    margin-top: 50px;
+    min-height: 100px ;
+    border: 1px solid;
+}
+/* Agar content min-height se bada hai to vo box height increase hota jayega
+But it co ntent is less than min-height then vo height ke andar rhega and height is fixed */
+ 
+/* Overflow property values
+    overflow: visible;
+    overflow:hidden;
+    overflow:auto;  //Scorll
+    overflow: scroll  */

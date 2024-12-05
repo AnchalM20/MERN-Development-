@@ -1,0 +1,147 @@
+Specificity:
+
+html elements can have multiple selectors:
+
+tag - css by tag name     
+Class - using class
+id - using id of that elements
+inline CSS
+!important
+
+ Order from least to most weight: tag<Class<ID<inline CSS
+ Example:
+    p{
+        color: blue;
+    }
+    .para{
+        color: orange;
+    }
+    #green-para{
+        color: green;
+    }
+  <p style="color:aqua;" class="para" id="green-para">HTML  HyperText Markup Language</p>
+Here, Highest priority is of inline css so final color of paragraph will be aqua.
+
+Content: height and width
+Padding: content and border ke bich ka part
+Margin:space between border and outer-space 
+
+Colors in CSS:
+1. Hexadecimal Colors: #000000-#ffffff
+#_ _  _ _  _ _
+Red Green  blue
+Blue: #0000ff
+Green: #00ff00
+Red: #ff0000
+White: #ffffff   Black: #000000
+2. RGB Colors: rgb(__,__,__) (red,green,blue)
+3. Predefined Colors: magenta,white black,blue
+
+Font:
+font-family
+font-weight
+font-style
+Emphasis
+How to add External Fonts?
+
+Units in CSS:
+1. Absolute Unit
+    mm,cm,in,px(fixed 1/96 of inch)
+pixel density high--> more clear picture
+
+2. Percentage Unit:
+div{
+    width: 10%;   ---> 10% of parent element 
+}
+suppose parent div is of 500px
+so it takes 10% of 500px
+
+3. Relative unit to font size:
+Emphasis: em {relative to parent ka font size}
+suppose my parent div font-size is 18px
+children div of that parent font-size: 1em 
+1em= 1 X {parent div ka font-size}
+default size of font-size in body: 16px
+rem - root
+
+4. Relative Unit to ViewPort:
+vw: 1/100 of ViewPort
+vh: 1/100 of height of ViewPort
+
+Q. 1%  Vs 1vw ?
+-->1vw is equal to 1% of the width of the viewport. So if the viewport width is 1000px, 1vw would be equal to 10px.
+-->Percentage values in CSS are relative to the size of the parent container.
+For example, if you set the width of an element to 50%, it will take up half of the width of its parent container.
+
+Pseudo-classes Selectors: 
+Example:
+        selector:pseudo-class {
+        property: value;
+        }
+For anchor tag:
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+
+Universal Selector:*
+
+Nested Selector
+Attribute Selector
+
+CSS Gradient:
+Display smooth transition between two or more specified color
+Types:
+1. Linear Gradients(goes down|up|right|diagonally)
+top-bottom--default
+    background-image: linear-gradient(to right,red,blue);
+    background-image: linear-gradient(to left,red,blue);
+    background-image: linear-gradient(to top,red,blue);
+    background-image: linear-gradient(to bottom right,red ,blue);
+    to bottom left,to top left,to top right,to bottom right
+
+2. Radial Gradient (defined by their center):
+-->background-image: radial-gradient(blue, green,yellow); /* blue to green to yellow transition */
+-->background-image: radial-gradient(circle,yellow 15%,orange 5%,red 40%);
+
+3. Conic Gradient(rotated around a center point):
+
+Text-Shadow:
+(arg1,arg2,arg3,color)-->horizontal length of shadow 
+                      -->Ver tical length of Shadow
+                      -->blur effect
+Ex: text-shadow: 3px 3px 3px red, 6px 7px 5px green; 
+multiple color with comma separate
+
+Box-shadow:
+box-shadow: -10px -10px 10px grey,15px 15px 15px yellow;
+negative value: top shadow
+default: bottom side shadow   
+
+How to add border using shadow?
+giving 1px 
+
+Position:
+1. static: HTML elements are positioned static by default
+2. Relative: relative to its normal position 
+3. Absolute: 
+4. fixed: fixed to position even if user's scroll position
+5. Sticky: postioned based on the user's scroll position
+
+
+
+

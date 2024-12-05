@@ -1,0 +1,63 @@
+always used script tag after body 
+Explore: Java Vs JavaScript
+
+To run JavaScript==>JavaScript Engine
+Chrome--> V8 Engine 
+Firefox--> SpiderMonkey
+
+Variables: let variable
+Let: block scope
+Redeclaration in let and var:global scope
+***Var: declare a variable any number of times
+***let: declare same variable twice in same scope give Error
+Constant variables
+***Use let instead var
+
+Primitive Types:
+String types: 'anchal'
+Number types: 1,2,3,3,1.2
+Boolean types: true or false
+Undefined types: let a; if console.log(a)-->give Undefined output
+Null: types: no values
+
+Dynamic types:
+we can define any Dynamic data type to variable
+let name='ansbd';
+name = 12; we can asign number
+
+Reference Types:
+Object types: pass by address
+Arrays; Contains list of items 
+Functions;
+
+Operators:
+** : x**y (x raised to y)
+Post increment: a++; (used the values and increment values)
+===: Strict equality [matches data type and values both]
+==: loose equality
+!==: Not equal
+
+OR: || Operators
+(false || 5 || 1)=> 5 (one true value then will not check for other values)
+
+Operator Precedence:
+
+
+**Factory Functions**
+**Constructor functions
+
+------this & new Keyword-----------
+this : refer current Object
+new: create empty Object
+empty objected created by new keyword referred by this
+
+a.draw(): a- object
+
+Dynamic nature of the object:
+we can add new properties to the object
+we can delete properties from the object
+
+Functions are objects
+
+**Primitive are copied by their values**
+**Refernces are copied by their addresses   

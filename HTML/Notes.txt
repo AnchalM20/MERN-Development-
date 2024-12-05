@@ -1,0 +1,140 @@
+MDN Documentation
+HTML: HyperText Markup Language
+HTML (HyperText Markup Language) is the most basic building block of the Web.
+It defines the meaning and structure of web content. 
+Other technologies besides HTML are generally used to describe
+a web page's appearance/presentation (CSS) or functionality/behavior (JavaScript).
+
+Empty Tag/Self-Closing Tag: 
+<br/>
+<img />
+<input />
+
+List: 
+1. Ordered
+<ol> <dt>Beast of Bodmin</dt>
+  <dd>A large feline inhabiting Bodmin Moor.</dd>
+
+    <li>abc</li>
+    <li>xyz</li>
+</ol>
+2. UnOrdered 
+
+<ul>
+    <li>Data1</li>
+    <li>Data2</li>
+</ul>
+
+3. Decription List: The <dl> HTML element represents a description list. 
+<dl>
+ 
+  <dt>Morgawr</dt>
+  <dd>A sea serpent.</dd>
+
+  <dt>Owlman</dt>
+  <dd>A giant owl-like creature.</dd>
+</dl>
+
+
+structure:
+
+1. <!DOCTYPE html> : tells browser that, we are using HTML version 5
+2. <html lang="en">: content of webpage in English
+3. <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning Example</title>
+  </head>
+  metadata about html doc always inside <head> Tag
+  Includes: Info about character set
+            Page Decription
+            Keywords,Author,viewport(Display Area)
+
+            initial-scale: Zoom Level
+
+<meta charset="UTF-8">: UTF-8 types of Character Encoding(mapping)
+
+
+Quotation & Citation Tag:
+blockquote
+<q></q>:The Inline Quotation element
+abbre
+address
+cite
+
+Rowspan ,colspan,rowgroup,colgroup,
+
+Anchor tag:
+<a href="www.facebook.com" title="_blank">Click</a>
+title="_blank": It open facebookin new tab
+<a></a>
+URL,Call,Mail
+
+For class--> . (dot)
+    id---> #
+
+transition-->Smooth
+html{
+  scroll-behavior:Smooth;
+}
+
+Div: Division tag[Block level element]
+    Generic Tag
+    Text,image,link
+    <div></div> display in different line every div go to next line
+    <div></div>
+display:Inline--> to display In single line
+
+span: <span></span>  Display in single line  
+[inline element]
+To display in block:{display:block;}
+
+Non-semantic tags: <div> and <span> [Tells nothing about content]
+Semantic Tag: 
+1. <aside></aside>    <section></section>
+2. <figure></figure>   <article></article>
+3. <figcaption></figcaption>
+4. <main></main>
+5. <nav></nav>
+6. <header></header>
+7. <footer></footer>
+
+what is difference between <header> and <footer> tag?
+
+Can we use header inside <footer> tag</footer>?: 
+Using <header> inside <footer>:
+Technically, HTML allows nesting elements, but it's semantically incorrect to 
+include a <header> inside a <footer>. Headers and footers are distinct sections of a 
+document, and they serve different purposes. Nesting them this way would violate the 
+intended structure and meaning of the HTML document.
+
+Can we use multiple header tag? Yes
+
+section tag: defines section in your document
+
+We can use:<section> inside <article>
+<article>
+  <section>
+  fjneiu
+  </section>
+</article>
+Also,
+<section>
+  <article>
+  lkdjlsfll
+  </article>
+</section>
+
+
+Difference between header and h1 tag?
+---- The <header> tag is used to define a header for a document or a section. It typically 
+contains introductory content like logos, navigation menus, or headings.
+It's not limited to containing just a single heading, and it can include various 
+elements to structure the header of a webpage.
+---- The <h1> tag is a heading tag used to define the most important heading on a page or in a section.
+It's typically used to represent the main topic or title of the content.
+
+Aside: <aside></aside>: Note,Keep in mind
+
+<body> Tag
+main tag: No header no footer

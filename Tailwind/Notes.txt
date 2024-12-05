@@ -1,0 +1,11 @@
+Install Node
+Run two commads on Tailwind site:
+npm install -D tailwindcss postcss autoprefixer vite
+npx tailwindcss init -p
+Install tailwindcss extension
+Add '*' in content
+Add scripts in package.json
+create main.css and insert and link:
+1.@tailwind base;
+2.@tailwind components;
+3.@tailwind utilities;
